@@ -1,0 +1,16 @@
+using System;
+
+class Program
+{
+    static void GreetUser(string userName)
+    {
+        Console.WriteLine($"Greetings, {userName}!");
+    }
+
+    static void Main()
+    {
+        GreetUser("Ashish");
+        GreetUser("Sona");
+        GreetUser("Abhishek");
+    }
+}
