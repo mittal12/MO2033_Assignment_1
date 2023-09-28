@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Please input your age: ");
+        int age;
+
+        if (int.TryParse(Console.ReadLine(), out age))
+        {
+            if (age >= 18)
+            {
+                Console.WriteLine("You have reached adulthood.");
+            }
+            else
+            {
+                Console.WriteLine("You are still a minor.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please provide a valid age as a numeric value.");
+        }
+    }
+}
