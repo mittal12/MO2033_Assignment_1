@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string favoriteColor;
+
+        Console.WriteLine("Please enter your favorite color (type 'stop' to exit):");
+
+        while (true)
+        {
+            favoriteColor = Console.ReadLine();
+
+            if (favoriteColor.ToLower() == "stop")
+            {
+                break; 
+            }
+
+            Console.WriteLine($"You chose the color: {favoriteColor}");
+        }
+
+        Console.WriteLine("Thank you for sharing your color preferences.");
+    }
+}
